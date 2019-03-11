@@ -44,4 +44,12 @@ topics:
 
   - name: Amazon Web Services
     web_url: https://aws.amazon.com/
-    image_url: https://commons.wikimedia.org/wiki/File:Amazon_Web_Services_Logo.svg
+    image_url: http://www.logospng.com/images/29/amazonwebservices-logosvg-wikimedia-commons-29486.png
+    
+  - name: iOS
+    web_url: https://www.apple.com/ios
+    image_url: https://img.icons8.com/color/1600/ios-logo.png
+    
+  - name: Android
+    web_url: https://www.android.com
+    image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/511px-Android_robot.svg.png
