@@ -38,14 +38,14 @@ social_media:
   # youtube: your_username
 
 topics:
-  - name: Docker
-    web_url: https://www.docker.com
-    image_url: https://www.docker.com/sites/default/files/social/docker_facebook_share.png
-
   - name: Amazon Web Services
     web_url: https://aws.amazon.com/
     image_url: http://www.logospng.com/images/29/amazonwebservices-logosvg-wikimedia-commons-29486.png
-    
+
+  - name: Docker
+    web_url: https://www.docker.com
+    image_url: https://www.docker.com/sites/default/files/social/docker_facebook_share.png
+   
   - name: iOS
     web_url: https://www.apple.com/ios
     image_url: https://img.icons8.com/color/1600/ios-logo.png
