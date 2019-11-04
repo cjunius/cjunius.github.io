@@ -38,6 +38,10 @@ social_media:
   # youtube: your_username
 
 topics:
+  - name: React JS
+    web_url: https://reactjs.org/
+    image_url: 
+
   - name: Amazon Web Services
     web_url: https://aws.amazon.com/
     image_url: http://www.logospng.com/images/29/amazonwebservices-logosvg-wikimedia-commons-29486.png
