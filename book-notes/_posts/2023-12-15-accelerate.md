@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Accelerate by Nicole Forsgren, Jez Humble, and Gene Kim
-categories: book-notes
 ---
 
 ### Metrics

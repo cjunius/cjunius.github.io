@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Making Work Visible: Exposing Time Theft to Optimize Work & Flow by Dominica DeGrandis"
-categories: book-notes
 ---
 
 The Five Thieves of Time
