@@ -12,7 +12,7 @@ sass:
   style: expanded # compressed, compact, expanded or compressed
 
 #seo
-keywords: ['quality', 'programming']
+keywords: ['quality', 'software testing', 'QA', 'QE', 'SDET']
 
 # Paginate
 pagination:
