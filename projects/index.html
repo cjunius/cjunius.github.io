@@ -1,0 +1,15 @@
+---
+layout: default
+title: Christopher's Projects
+---
+
+<h2>Projects</h2>
+{% for item in site.data.projects %}
+    <span class="project-item">{{ item.name }} <a href="{{ item.link }}" target="_blank">&gt;&gt;</a></span>
+    <p>{{ item.description }}</p>
+    <br>
+{% endfor %}
+
+<br>
+
+My GitHub: <a href="https://github.com/tajacks" target="_blank">Link</a>
