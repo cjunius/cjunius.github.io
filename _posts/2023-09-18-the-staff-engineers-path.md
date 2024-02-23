@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Staff Engineer's Path by Tanya Reilly
-categories: book-notes
+categories: "Book Notes 2023"
 ---
 
 ## Introduction

@@ -1,6 +1,7 @@
 - name: Rest GO
   description: Mocking REST server written in GO
   link: https://github.com/cjunius/rest-go
+
 - name: JSMART
   description: Java, Selenium, Maven, Appium, RestAssured, TestNG testing framework
-  link: htps://github.com/cjunius/jsmart_af
+  link: htps://github.com/cjunius/JSMART_AF
