@@ -2,6 +2,7 @@
 layout: post
 author: cjunius
 title: The Staff Engineer's Path by Tanya Reilly
+categories: book-notes
 ---
 
 ## Introduction
