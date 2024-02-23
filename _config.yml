@@ -1,9 +1,9 @@
 # Site Specific Configuration
-name: LightSpeed
-description: A simple Jekyll theme
-url: https://example.com
-author: tajacks
-timezone: America/Toronto
+name: Christopher Junius
+description: My Personal Website
+url: https:/cjunius.github.io
+author: cjunius
+timezone: America/New_York
 timezone_short: ET
 
 # Keywords
