@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accelerate by Nicole Forsgren, Jez Humble, and Gene Kim
-categories: "Book Notes 2023"
+categories: book-notes
 ---
 
 ### Metrics

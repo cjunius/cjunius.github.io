@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Staff Engineer: Beyond the Management Track by Will Larson"
-categories: "Book Notes 2023"
+categories: book-notes
 ---
 
 ### 4 Common Archetypes
