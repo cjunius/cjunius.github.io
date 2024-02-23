@@ -5,11 +5,7 @@ title: Christopher's Projects
 
 <h2>Projects</h2>
 {% for item in site.data.projects %}
-    <span class="project-item">{{ item.name }} <a href="{{ item.link }}" target="_blank">&gt;&gt;</a></span>
+    <span class="project-item"><a href="{{ item.link }}" target="_blank">{{ item.name }} </a></span>
     <p>{{ item.description }}</p>
     <br>
 {% endfor %}
-
-<br>
-
-My GitHub: <a href="https://github.com/cjunius" target="_blank">Link</a>
