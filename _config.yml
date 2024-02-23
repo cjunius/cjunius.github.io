@@ -1,30 +1,24 @@
 # Site Specific Configuration
 name: Christopher Junius
-description: My Personal Website
-url: https:/cjunius.github.io
+description: Christopher Junius' Personal Site
+url: https://cjunius.github.io
 author: cjunius
 timezone: America/New_York
 timezone_short: ET
 
-# Keywords
-keywords: ['seo', 'key', 'words']
-
-# Analytics (Plausible requires sign-up)
-analytics:
-  plausible:
-    enabled: false
-    site_fqdn: 'your.site.fqdn'
-    script_source: 'https://plausible.io/js/script.js'
-
 # Styling
 sass:
   sass_dir: _sass
-  style: expanded # compact, expanded or compressed
+  style: expanded # compressed, compact, expanded or compressed
+
+#seo
+keywords: ['quality', 'programming']
 
 # Paginate
 pagination:
   enabled: true
-  per_page: 5
+  per_page: 10
+  indexpage: 'index'
   sort_field: 'date'
   sort_reverse: true
 
@@ -37,11 +31,10 @@ autopages:
     silent: false
 
 # Exclusions
-exclude: [ 'README.md', 'COPYING' ]
+exclude: [ 'README.md', 'COPYING', 'drafts', 'templates' ]
 
 # Plugins
 plugins:
   - jekyll-feed
   - jekyll-paginate-v2
   - jekyll-seo-tag
-

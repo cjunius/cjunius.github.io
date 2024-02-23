@@ -1,3 +1,6 @@
 .jekyll-cache
 _site
 .idea
+
+# MacOS
+.DS_Store
