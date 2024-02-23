@@ -40,3 +40,21 @@ plugins:
   - jekyll-feed
   - jekyll-paginate-v2
   - jekyll-seo-tag
+
+social_media:
+  # behance: your_username
+  # dribbble: your_username
+  facebook: cjunius
+  hackerrank: cjunius
+  # instagram: your_username
+  # keybase: your_username
+  linkedin: cjunius
+  # mastodon: your_username
+  # medium: your_username
+  # stackoverflow: your_user_id
+  # telegram: your_username
+  twitter: cjunius
+  # unsplash: your_username
+  # vk: your_username
+  # website: http://your_website_url
+  youtube: cjunius
