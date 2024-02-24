@@ -5,7 +5,7 @@ title: Christopher's Posts
 
 <h2>Posts</h2>
 {% for category in site.categories %}
-<h3 class="category-header"><b>{{ category | first | replace: '-', ' ' | capitalize_all }}</b></h3>
+<h3 class="category-header"><b style="text-transform:capitalize;">{{ category | first | replace: '-', ' ' }}</b></h3>
 {% for post in category[1] %}
 <span class="post-item">{{ post.date | date: '%Y-%m-%d' }} <a href="{{ post.url }}">{{ post.title }}</a></span>
 {% endfor %}
