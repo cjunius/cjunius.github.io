@@ -2,10 +2,14 @@
   description: BET IN PERSON, GET PAID ONLINE!
   link: https://www.fanduel.com/atr
 
-- name: Rest GO
+- name: 'Personal: Rest GO'
   description: Mocking REST server written in GO
   link: https://github.com/cjunius/rest-go
 
-- name: JSMART
+- name: 'Personal: Test Automation Playground'
+  description: Example Playwright and Cypress test automation frameworks
+  link: https://github.com/cjunius/test-automation
+
+- name: 'Personal: JSMART'
   description: Java, Selenium, Maven, Appium, RestAssured, TestNG testing framework
   link: https://github.com/cjunius/JSMART_AF

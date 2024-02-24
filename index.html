@@ -10,7 +10,7 @@ I'm a quality engineer. Here are some of the things I find interesting:
   <li>Astronomy</li>
 </ul>
 
-<h2>Posts</h2>
+<h2>Recent Posts</h2>
 {% for post in site.posts limit:10 %}
 <span class="post-item"><span class="mobile-hide"> {{ post.date | date: '%Y-%m-%d' }} </span> <a href="{{ post.url }}">{{ post.title }}</a><span class="mobile-hide float-right">{{ post.categories | first | replace: '-', ' ' | capitalize}}</span></span>
 {% endfor %}
