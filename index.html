@@ -2,15 +2,22 @@
 layout: default
 title: Home
 ---
-<h2>About</h2>
-I'm a quality engineer. Here are some of the things I find interesting:
+<h3 class="category-header">About</h3>
+{{ site.about.description}}.
+
+<br />
+<br />
+Here are some of the things I find interesting:
 <ul>
-  <li>Test Automation</li>
-  <li>Chess</li>
-  <li>Astronomy</li>
+{% for interest in site.about.interests %}
+  <li>{{ interest.name }}</li>
+{% endfor %}  
 </ul>
 
-<h2>Recent Posts</h2>
-{% for post in site.posts limit:10 %}
-<span class="post-item"><span class="mobile-hide"> {{ post.date | date: '%Y-%m-%d' }} </span> <a href="{{ post.url }}">{{ post.title }}</a><span class="mobile-hide float-right" style="text-transform:capitalize;">{{ post.categories | first | replace: '-', ' ' }}</span></span>
+
+<br />
+
+<h3 class="category-header">Recent Posts</h3>
+{% for post in site.posts limit:7 %}
+<span class="post-item"><span class="mobile-hide">{{ post.date | date: '%Y-%m-%d' }}</span> <a href="{{ post.url }}">{{ post.title }}</a><span class="mobile-hide float-right" style="text-transform:capitalize;">{{ post.categories | first | replace: '-', ' ' }}</span></span>
 {% endfor %}

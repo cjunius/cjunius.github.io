@@ -1,5 +1,6 @@
 # Site Specific Configuration
 name: Christopher Junius
+title: Christopher Junius
 description: Christopher Junius' Personal Site
 url: https://cjunius.github.io
 author: cjunius
@@ -61,3 +62,10 @@ social_media:
   # vk: your_username
   # website: http://your_website_url
   youtube: christopherjunius
+
+about:
+  description: Husband to a remarkable wife. Father to 2 amazing twin daughters. Caretaker to a dog and two cats. Jack of many trades. Quality Engineering Expert.
+  interests:
+  - name: Test Automation
+  - name: Chess 
+  - name: Astronomy

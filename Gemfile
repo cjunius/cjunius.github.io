@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby "3.1.4"
+ruby "3.2.3"
 gem "jekyll"
 gem "jekyll-feed"
 gem "jekyll-paginate-v2"
@@ -9,3 +9,4 @@ gem 'github-pages', group: :jekyll_plugins
 gem "jekyll-github-metadata"
 gem "jekyll-octicons"
 gem "jemoji"
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
