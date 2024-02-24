@@ -12,5 +12,5 @@ I'm a quality engineer. Here are some of the things I find interesting:
 
 <h2>Recent Posts</h2>
 {% for post in site.posts limit:10 %}
-<span class="post-item"><span class="mobile-hide"> {{ post.date | date: '%Y-%m-%d' }} </span> <a href="{{ post.url }}">{{ post.title }}</a><span class="mobile-hide float-right">{{ post.categories | first | replace: '-', ' ' | capitalize}}</span></span>
+<span class="post-item"><span class="mobile-hide"> {{ post.date | date: '%Y-%m-%d' }} </span> <a href="{{ post.url }}">{{ post.title }}</a><span class="mobile-hide float-right">{{ post.categories | first | replace: '-', ' ' | capitalize_all }}</span></span>
 {% endfor %}
