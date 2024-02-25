@@ -4,18 +4,18 @@ title: Accelerate by Nicole Forsgren, Jez Humble, and Gene Kim
 ---
 
 ### Metrics
-- Deployment frequency: How often does your team deploy?
+- **Deployment frequency**: How often does your team deploy?
 
-- Lead time for changes: How much time exists between a customer submitting a request and that request being fulfilled in production?
+- **Lead time for changes**: How much time exists between a customer submitting a request and that request being fulfilled in production?
 
-- Mean time to recovery (MTTR): How much time does it take to recover from system failure?
+- **Mean time to recovery (MTTR)**: How much time does it take to recover from system failure?
 
-- Change failure rate (CFR): How often do you need to revert your changes?
+- **Change failure rate (CFR)**: How often do you need to revert your changes?
 
-```
+<br />
 “It’s much easier to make sure that the people building the software are doing the right thing than inspect nearly completed systems and features to find significant architectural problems and defects that involve a substantial rework.”
-```
 
+<br />
 ### In order to reduce deployment pain, we should:
 1. Build systems that are designed to be deployed easily into multiple environments, can detect and tolerate failures in their environments, and can have various components of the system updated independently.
 
@@ -23,6 +23,7 @@ title: Accelerate by Nicole Forsgren, Jez Humble, and Gene Kim
 
 3. Build intelligence into the application and the platform so that the deployment process can be as simple as possible.
 
+<br />
 ### Five characteristics of a transformational leader are:
 
 1. Vision
@@ -66,12 +67,13 @@ title: Accelerate by Nicole Forsgren, Jez Humble, and Gene Kim
   - Personally compliments me when I do outstanding work
 
 
-
+<br />
 Tips to improve culture and support your teams
 - Building trust with your counterparts on other teams
 - Encouraging practitioners to move between departments
 - Actively seeking, encouraging, and reworking work that facilitates collaboration
 
+<br />
 Create a climate of learning by
 - Creating a train budget and advocating for it internally
 - Ensuring that your team has the resources to engage in informal learning and the space to explore ideas
@@ -79,6 +81,7 @@ Create a climate of learning by
 - Creating opportunities and spaces to share information
 - Encourage sharing and innovation by having demo days and forums
 
+<br />
 Make effective use of tools
 - Make sure your team can choose their tools
 - Make monitoring a priority

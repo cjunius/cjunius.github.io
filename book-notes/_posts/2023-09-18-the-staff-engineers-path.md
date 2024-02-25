@@ -23,6 +23,7 @@ Think in terms of multiple projects and multiple years
 - Align with your management chain. Discuss what you think your job is, see what your manager thinks it is, understand what’s valued and what’s actually useful, and set expectations explicitly. Not all companies need all shapes of staff engineers.
 - Your job will be a weird shape sometimes, and that’s OK.
 
+<br />
 ### The Three Maps
 #### The Locator Map: Getting Perspective
 Your place in the wider organization and company - Org Chart
@@ -41,6 +42,7 @@ Gives us a compelling story of where we’re going and why we want to get there
 - Be clear about what goals everyone is aiming for
 - Think about your own work and what your journey is
 
+<br />
 ### Creating the Big Picture
 #### Recap
 - A technical vision describes a future state. A technical strategy describes a plan of action.
@@ -50,10 +52,11 @@ Gives us a compelling story of where we’re going and why we want to get there
 - Writing the document will involve many iterations of talking to other people, refining your ideas, making decisions, writing, and realigning. It will take time.
 - Your vision or strategy is only as good as the story you can tell about it.
 
+<br />
 ### Project Execution
 Projects you take on will be more difficult and ambiguous. Your ability to navigate human factors will dictate your success or failure
 
-### Finite Time
+#### Finite Time
 Everything you commit to has an opportunity cost. By choosing to do one thing you’re implicitly choosing not to do another. 
 
 Put non-meetings in the calendar too. specific, deliberate items
@@ -114,6 +117,7 @@ Put non-meetings in the calendar too. specific, deliberate items
 - Free up your resources by giving other people opportunities to grow, including starting projects and handing them off.
 - Focus means sometimes saying no. Learn how.
 
+<br />
 ### Leading Big Projects
 #### Recap
 - Staff Engineers can take on problems that seem intractable and make them tractable
@@ -127,6 +131,7 @@ Put non-meetings in the calendar too. specific, deliberate items
 - Communicate frequently with your audience in mind.
 - Expect problems to arise. Make plans that assume there will be changes in direction, people quitting, and unavailable dependencies
 
+<br />
 ### Why Have We Stopped?
 #### Recap
 - As the project lead, you are responsible for understanding why your project has stopped and getting it started again.
@@ -136,6 +141,7 @@ Put non-meetings in the calendar too. specific, deliberate items
 - Don’t declare victory unless the project is truly complete. Code completeness is just on milestone.
 - Whether you’re ready or not, sometimes it’s time for the project to end. Celebrate, retrospect, and clean up.
 
+<br />
 ### Leveling Up
 You’re a role model now (sorry)
 
@@ -154,10 +160,10 @@ You’re a role model now (sorry)
 - Design software that’s easy to decommission
 - The metric for success is whether other people want to work with you
 
+<br />
 ### Good Influence at Scale
 Scaling your good influence
  
-
 | | Individual | Group | Catalyst |
 | --- | --- | --- | --- |
 | Advice | Mentoring, Sharing Knowledge, Feedback | Tech Talks, Documentation, Articles | Mentorship Program, Tech Talk Events |
@@ -165,9 +171,7 @@ Scaling your good influence
 | Guardrails | Code review, change review, design review | Processes, linters, style guides | Frameworks, culture change |
 | Opportunity | Delegating, sponsorship, cheerleading, ongoing support | Sharing the spotlight, empowering your team | Creating a culture of opportunity, watching with pride as your superstar junior colleagues change the world |
 
-### Science of People 
-Website for learning some of this “humaning” magic that other people seem to have been born knowing how to do
-
+<br />
 ### Five Metrics of Job Health
 Monthly check of Job Health to shield from recenty bias
 

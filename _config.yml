@@ -42,8 +42,6 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-seo-tag
   - jekyll-github-metadata
-  - jekyll-octicons
-  - jemoji
 
 social_media:
   # behance: your_username

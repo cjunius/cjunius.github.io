@@ -10,6 +10,7 @@ The Five Thieves of Time
 4. Conflicting Priorities
 5. Neglected Work
 
+<br />
 | Objection | Response | Key Metric |
 | --- | --- | --- |
 | Things take too long | Here’s how long things actually take to do | **Flow Time** measures speed. Clock starts when work begins and ends when customer can consume value |
@@ -18,6 +19,7 @@ The Five Thieves of Time
 | We need features to be delivered, but you just want to refactor architecture | We need to change the oil in the car every now and then. Otherwise, we won’t have a car to drive.” | **Flow distribution** the distribution of different work types, e.g. 30% features, 60% defects, 10% debt |
 | We are at risk of not completing all the initiatives on this year’s roadmap | Attempting to do too many things at once results in lower quality and slower delivery. IT’s why Steve Jobs killed many great ideas at Apple, so they could do fewer things really well. | **Flow load** the amount of work started but not yet finished. Lots of partially completed work-in-progress (WIP) is expensive |
 
+<br />
 ## Chapter Key Takeaways
 ### The Five Thieves of Time
 #### Too Much Work-In-Progress
@@ -54,6 +56,7 @@ The Five Thieves of Time
 - Beware of invisible technical debt accruing while teams are sidetracked by short-term priorities
 - Acknowledge zombie projects. Consider the impact they have on completing high-value projects. Either give them the attention they need or kill them.
 
+<br />
 ### How to Expose Time Theft to Optimize Workflow
 #### Too Much Work-In-Progress
 - Visual-spatial learners think in pictures rather than in works. They have a different brain oprganization than auditory-sequential learners. They learn better by seeing than by hearing. Remember - 2/3 of the population are visual-spatial learners
@@ -100,6 +103,7 @@ The Five Thieves of Time
 - Small tasks may not need to be tracked on a board, but consider if adding them to the board is helpful to promote cross-training, give visibility to someone’s work, or notify another team about the existence of a dependency
 - PO Boards can provide the metrics needed to get buy-in on changes to traditional accounting systems
 
+<br />
 ### Metrics, Feedback, and Calibration
 #### Your Metrics of Your Money
 - Delays are common; use metrics, particularly flow metrics, to help you make good decisions on priorities, WIP limits, and capacity utilization
