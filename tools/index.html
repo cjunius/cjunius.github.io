@@ -3,9 +3,22 @@ layout: default
 title: Christopher Junius
 ---
 
-<h2>Tools</h2>
-<span class="project-item"><a href="/tools/base64.html">Base 64 Encoder/Decoder</a></span>
-<br />
-<span class="project-item"><a href="/tools/json-pretty-print.html">JSON Pretty Print</a></span>
-<br />
-<br>
+<h3 class="category-header">Tools</h3>
+
+<form onsubmit="event.preventDefault(); return false;">
+    <textarea id="input" style="width: 100%; height: 150px;">{&#34;Property1&#34;:&#34;Value1&#34;,&#34;Property2&#34;:&#34;Value2&#34;}</textarea>
+    <div id="message" style="color: green;"></div>
+
+    <p>Base 64
+        <button style="margin: 10px; margin-bottom: 20px;" type="submit" value="Encode" onClick="document.getElementById('input').value = btoa(document.getElementById('input').value);">Encode</button>
+        <button style="margin: 10px; margin-bottom: 20px;" type="submit" value="Decode" onClick="document.getElementById('input').value = atob(document.getElementById('input').value);">Decode</button>
+    </p>
+    
+    <p>JSON
+        <button style="margin: 10px; margin-bottom: 20px;" type="submit" value="JSON Validator" onClick="document.getElementById('message').innerText = 'Invalid JSON'; document.getElementById('message').style.color = 'red'; JSON.parse(document.getElementById('input').value); document.getElementById('message').innerText = 'Valid JSON';document.getElementById('message').style.color = 'green'">Validate</button>
+        <button style="margin: 10px; margin-bottom: 20px;" type="submit" value="PP" onClick="document.getElementById('input').value = JSON.stringify(JSON.parse(document.getElementById('input').value),null,2);">Pretty Print</button>
+        <button style="margin: 10px; margin-bottom: 20px;" type="submit" value="JSON Minify" onClick="document.getElementById('input').value = JSON.stringify(JSON.parse(document.getElementById('input').value));">Minify</button>
+    </p>
+
+  </form>
+  
