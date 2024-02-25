@@ -1,15 +1,34 @@
-- name: 'FanDuel: App Ticket Redemption'
-  description: BET IN PERSON, GET PAID ONLINE!
-  link: https://www.fanduel.com/atr
-
-- name: 'Personal: Rest GO'
+- name: Rest GO
+  type: Personal
   description: Mocking REST server written in GO
   link: https://github.com/cjunius/rest-go
 
-- name: 'Personal: Test Automation Playground'
+- name: Test Automation Playground
+  type: Personal
   description: Example Playwright and Cypress test automation frameworks
   link: https://github.com/cjunius/test-automation
 
-- name: 'Personal: JSMART'
+- name: JSMART
+  type: Personal
   description: Java, Selenium, Maven, Appium, RestAssured, TestNG testing framework
   link: https://github.com/cjunius/JSMART_AF
+
+- name: FanDuel Sportsbook
+  type: Professional
+  description: '#1 Sportsbook in the US'
+  link: https://sportsbook.fanduel.com/
+
+- name: FanDuel App Ticket Redemption
+  type: Professional
+  description: BET IN PERSON, GET PAID ONLINE!
+  link: https://www.fanduel.com/atr
+
+- name: SAP Cloud Platform
+  type: Professional
+  description: Platform as a service for creating new applications in a secure cloud environment
+  link: https://en.wikipedia.org/wiki/SAP_Cloud_Platform
+
+- name: SAP Afaria
+  type: Professional
+  description: Mobile Device Management/Mobile Application Management Software
+  link: https://en.wikipedia.org/wiki/SAP_Afaria

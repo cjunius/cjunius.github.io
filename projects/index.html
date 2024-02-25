@@ -3,8 +3,17 @@ layout: default
 title: Christopher's Projects
 ---
 
-<h2>Projects</h2>
-{% for item in site.data.projects %}
+<h3><b>Personal Projects</b></h3>
+{% assign personal_projects = site.data.projects | where: "type", "Personal" %}
+{% for item in personal_projects %}
+    <span class="project-item"><a href="{{ item.link }}" target="_blank">{{ item.name }} </a></span>
+    <p>{{ item.description }}</p>
+    <br>
+{% endfor %}
+
+<h3><b>Professional Projects</b></h3>
+{% assign professional_projects = site.data.projects | where: "type", "Professional" %}
+{% for item in professional_projects %}
     <span class="project-item"><a href="{{ item.link }}" target="_blank">{{ item.name }} </a></span>
     <p>{{ item.description }}</p>
     <br>
