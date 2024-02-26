@@ -6,19 +6,38 @@ title: Christopher Junius
 <h3 class="category-header">Tools</h3>
 
 <form onsubmit="event.preventDefault(); return false;">
-    <textarea id="input" style="width: 100%; height: 400px;">{&#34;Property1&#34;:&#34;Value1&#34;,&#34;Property2&#34;:&#34;Value2&#34;}</textarea>
+    <textarea id="input" style="width: 100%; height: 300px;">{&#34;Property1&#34;:&#34;Value1&#34;,&#34;Property2&#34;:&#34;Value2&#34;}</textarea>
     <div id="message" style="color: green;"></div>
 
-    <p>Base 64
-        <button style="margin: 10px; margin-bottom: 20px;" type="submit" value="Encode" onClick="document.getElementById('input').value = btoa(document.getElementById('input').value);">Encode</button>
-        <button style="margin: 10px; margin-bottom: 20px;" type="submit" value="Decode" onClick="document.getElementById('input').value = atob(document.getElementById('input').value);">Decode</button>
-    </p>
+    <div class="float-left category"><h3 class=category-header">Textarea</h2>
+        <button type="submit" value="Copy" onClick="navigator.clipboard.writeText(document.getElementById('input').value);">Copy</button> 
+        <button type="submit" value="Paste" onClick="navigator.clipboard.readText().then((clipText) => (document.getElementById('input').value = clipText));">Paste</button>
+        <button type="submit" value="Clear" onClick="document.getElementById('input').value = ''; document.getElementById('message').innerText = ''">Clear</button>  
+    </div>  
+
+    <div class="float-left category"><h3 class=category-header">Base 64</h3>
+        <button type="submit" value="Encode" onClick="document.getElementById('input').value = btoa(document.getElementById('input').value);">Encode</button>
+        <button type="submit" value="Decode" onClick="document.getElementById('input').value = atob(document.getElementById('input').value);">Decode</button>
+    </div>
     
-    <p>JSON
-        <button style="margin: 10px; margin-bottom: 20px;" type="submit" value="JSON Validator" onClick="document.getElementById('message').innerText = 'Invalid JSON'; document.getElementById('message').style.color = 'red'; JSON.parse(document.getElementById('input').value); document.getElementById('message').innerText = 'Valid JSON';document.getElementById('message').style.color = 'green'">Validate</button>
-        <button style="margin: 10px; margin-bottom: 20px;" type="submit" value="PP" onClick="document.getElementById('input').value = JSON.stringify(JSON.parse(document.getElementById('input').value),null,2);">Pretty Print</button>
-        <button style="margin: 10px; margin-bottom: 20px;" type="submit" value="JSON Minify" onClick="document.getElementById('input').value = JSON.stringify(JSON.parse(document.getElementById('input').value));">Minify</button>
-    </p>
+    <div class="float-left category"><h3 class=category-header">JSON</h3>
+        <button type="submit" value="JSON Validator" onClick="document.getElementById('message').innerText = 'Invalid JSON'; document.getElementById('message').style.color = 'red'; JSON.parse(document.getElementById('input').value); document.getElementById('message').innerText = 'Valid JSON'; document.getElementById('message').style.color = 'green'">Validate</button>
+        <button type="submit" value="PP" onClick="document.getElementById('input').value = JSON.stringify(JSON.parse(document.getElementById('input').value),null,2);">Pretty Print</button>
+        <button type="submit" value="JSON Minify" onClick="document.getElementById('input').value = JSON.stringify(JSON.parse(document.getElementById('input').value));">Minify</button>
+    </div>
+
+    <div class="clearfix"></div>
 
   </form>
+
+  <style>
+    button {
+        margin-right: 5px;
+    }
+
+    .category {
+        margin-right: 90px;
+        margin-bottom: 20px;
+    }
+  </style>
   
