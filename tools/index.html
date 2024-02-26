@@ -12,7 +12,10 @@ title: Christopher Junius
     <div class="float-left category"><h3 class=category-header">Textarea</h2>
         <button type="submit" value="Copy" onClick="navigator.clipboard.writeText(document.getElementById('input').value);">Copy</button> 
         <button type="submit" value="Paste" onClick="navigator.clipboard.readText().then((clipText) => (document.getElementById('input').value = clipText));">Paste</button>
-        <button type="submit" value="Clear" onClick="document.getElementById('input').value = ''; document.getElementById('message').innerText = ''">Clear</button>  
+        <button type="submit" value="Clear" onClick="document.getElementById('input').value = ''; document.getElementById('message').innerText = ''">Clear</button>
+        <button type="submit" value="CharCount" onClick="document.getElementById('message').innerText = document.getElementById('input').value.length">Char Count</button>
+        <button type="submit" value="WordCount" onClick="document.getElementById('message').innerText = document.getElementById('input').value.trim().split(/\s+/).length">Word Count</button>
+        
     </div>  
 
     <div class="float-left category"><h3 class=category-header">Base 64</h3>
