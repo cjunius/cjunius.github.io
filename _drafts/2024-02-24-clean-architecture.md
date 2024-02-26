@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Clean Architecture by RObert C. Martin
+title: Clean Architecture by Robert C. Martin
 ---
 
 WIP

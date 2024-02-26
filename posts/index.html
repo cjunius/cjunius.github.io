@@ -4,10 +4,15 @@ title: Christopher's Posts
 ---
 
 {% for category in site.categories %}
-    <h3 class="category-header"><b style="text-transform:capitalize;">{{ category | first | replace: '-', ' ' }}</b></h3>
-    {% for post in category[1] | limit:5 %}
+    {% assign name = category | first %}
+    {% assign category_posts = category[1] %}
+    {% assign count = category[1] | size %}
+    <h3 class="category-header"><b style="text-transform:capitalize;">{{ name | replace: '-', ' ' }}</b></h3>
+    {% for post in category_posts limit:5 %}
         <span class="post-item">{{ post.date | date: '%Y-%m-%d' }} <a href="{{ post.url }}">{{ post.title }}</a></span>
     {% endfor %}
-    <a href="{{ category | first | relative_url }}">More</a>
+    {% if count > 5 %}
+        <a href="{{ name | relative_url }}">Older</a>
+    {% endif %}
 {% endfor %}
 
