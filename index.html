@@ -10,7 +10,7 @@ title: Home
 Here are some of the things I find interesting:
 <ul>
 {% for interest in site.about.interests %}
-  <li>{{ interest.name }}</li>
+  <li>{{ interest.name }}{% if interest.link %} - <a href="{{ interest.link }}">{{ interest.link}}</a> {% endif %}</li>
 {% endfor %}  
 </ul>
 
