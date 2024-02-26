@@ -13,8 +13,7 @@ title: Christopher Junius
         <button type="submit" value="Copy" onClick="navigator.clipboard.writeText(document.getElementById('input').value);">Copy</button> 
         <button type="submit" value="Paste" onClick="navigator.clipboard.readText().then((clipText) => (document.getElementById('input').value = clipText));">Paste</button>
         <button type="submit" value="Clear" onClick="document.getElementById('input').value = ''; document.getElementById('message').innerText = ''">Clear</button>
-        <button type="submit" value="CharCount" onClick="document.getElementById('message').innerText = document.getElementById('input').value.length">Char Count</button>
-        <button type="submit" value="WordCount" onClick="document.getElementById('message').innerText = document.getElementById('input').value.trim().split(/\s+/).length">Word Count</button>
+        <button type="submit" value="CharCount" onClick="document.getElementById('message').innerHTML = 'Characters: ' + document.getElementById('input').value.length + '<br />Words: ' + document.getElementById('input').value.trim().split(/\s+/).length">Count</button>
         
     </div>  
 
