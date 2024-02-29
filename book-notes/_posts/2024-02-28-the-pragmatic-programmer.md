@@ -105,37 +105,63 @@ title: The Pragmatic Programmer by David Thomas and Andrew Hunt
 - Tip 64: Test your estimates
 - Tip 65: Refactor Early, Refactor Often
 - Tip 66: Testing is not about finding bugs
+  - Tests drive coding
 - Tip 67: A Test is the first user of your code
 - Tip 68: Build End-to-end, Not Top-Down or Bottom-Up
 - Tip 69: Design to Test
 - Tip 70: Test Your software, or your uses will
-- Tip 71: USe property-based tests to validate your assumptions
+- Tip 71: Use property-based tests to validate your assumptions
 - Tip 72: Keep it simple and minimize attack surfaces
+  - Code complexity leads to attack vectors
+  - Input data is an attack vector
+  - Unauthenticated services are an attack vector
+  - Authenticated services are an attack vector
+  - Output data is an attack vector
+  - Debugging info as is attack vector
+  - Principle of Least Privilege
+  - Secure Defaults
+  - Encrypt Sensitive Data
+  - Maintain Security Updates
 - Tip 73: Apply security patches quickly
 - Tip 74: Name Well; Rename When Needed
 
 #### When Should you refactor
-Duplication
-: You've discovered a violation of the DRY principle
-
-Nonorthogonal design
-: You've discovered something that could be made more orthogonal
-
-Outdated knowledge
-: Things change, requirements drift, and your knowledge of the problem increases. Code needs to keep up
-
-Usage
-: As the system gets used by real people under real circumstances, you realize some features are now more important than previously though, and "must have" features perhabs weren't
-
-Performance
-: You need to move functionality from one area of the system to another to improve performance
-
-The Tests Pass
-: Yes. Seriously. We did say that refactoring should be a small scale activity, backed up by good tests. So when you've added a small amount of code, and that one extra test passes, you now have a great opportunity to dive in and tidy up what you just wrote.
+- **Duplication**: You've discovered a violation of the DRY principle
+- **Nonorthogonal design**: You've discovered something that could be made more orthogonal
+- **Outdated knowledge**: Things change, requirements drift, and your knowledge of the problem increases. Code needs to keep up
+- **Usage**: As the system gets used by real people under real circumstances, you realize some features are now more important than previously though, and "must have" features perhabs weren't
+- **Performance**: You need to move functionality from one area of the system to another to improve performance
+- **The Tests Pass**: Yes. Seriously. We did say that refactoring should be a small scale activity, backed up by good tests. So when you've added a small amount of code, and that one extra test passes, you now have a great opportunity to dive in and tidy up what you just wrote.
 
 ### Before the Project
-- Tip
+- Tip 75: No one knows exactly what they want
+- Tip 76: Programmers help people understand what they want
+- Tip 77: Requirements are learned in a feedback loop
+- Tip 78: Work with a User to think like a User
+- Tip 79: Policy is Metadata
+- Tip 80: Use a Project Glossary
+- Tip 81: Don't think outside the box - Find the bix
+- Tip 82: Don't go into the code alone
+- Tip 83: Agile is not a noun; Agile is how you do things
 
 ### Pragmatic Projects
-- Tip
+- Tip 84: Maintain small, stable teams
+- Tip 85: Schedule it to make it happen
+- Tip 86: Organize fully functional teams
+- Tip 87: Do what works, not what's fashionable
+- Tip 88: Deliver when users need it
+- Tip 89: Use version control to drive builds, tests, and releases
+- Tip 90: Test early, Test often, Test automatically
+- Tip 91: Coding ain't done 'til all the tests run
+- Tip 92: USe saboteurs to test your testing
+- Tip 93: Test state coverage, not code coverage
+- Tip 94: Find bugs once
+- Tip 95: Don't use manual procedures
+- Tip 96: Delight users, don't just deliver code
+- Tip 97: Sign your work
+
+### Postface
+- Tip 98: First, do no harm
+- Tip 99: Don't enable scumbags
+- Tip 100: It's your life. Share it. Celebrate it. Build it. AND HAVE FUN!
 
