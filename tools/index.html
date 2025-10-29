@@ -30,7 +30,7 @@ title: Christopher Junius
 
     <div class="float-left category"><h3 class=category-header">QR Code</h3>
         <button type="submit" value="QR" onClick="generateQR()">Generate</button>
-        <button type="submit" value="ClearQR" onClick="document.getElementById('qrcode').innerHTML = ''">Clear</button>
+        <button type="submit" value="ClearQR" onClick="clearQR()">Clear</button>
     </div>
 
     <div class="clearfix"></div>
@@ -56,6 +56,15 @@ title: Christopher Junius
                 correctLevel: QRCode.CorrectLevel.M
             });
         }
+    }
+
+    function clearQR() {
+        var container = document.getElementById('qrcode');
+        if (container._qr && typeof container._qr.clear === 'function') {
+            container._qr.clear();
+        }
+        container.innerHTML = '';
+        container._qr = null;
     }
   </script>
 
