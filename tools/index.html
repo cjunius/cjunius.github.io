@@ -26,6 +26,7 @@ title: Christopher Junius
         <button type="submit" value="JSON Validator" onClick="document.getElementById('message').innerText = 'Invalid JSON'; document.getElementById('message').style.color = 'red'; JSON.parse(document.getElementById('input').value); document.getElementById('message').innerText = 'Valid JSON'; document.getElementById('message').style.color = 'green'">Validate</button>
         <button type="submit" value="PP" onClick="document.getElementById('input').value = JSON.stringify(JSON.parse(document.getElementById('input').value),null,2);">Pretty Print</button>
         <button type="submit" value="JSON Minify" onClick="document.getElementById('input').value = JSON.stringify(JSON.parse(document.getElementById('input').value));">Minify</button>
+        <button type="submit" value="button2" onClick="convertJSONYAML()">Convert JSON/YAML</button>
     </div>
 
     <div class="float-left category"><h3 class=category-header">QR Code</h3>
@@ -40,6 +41,7 @@ title: Christopher Junius
   <div id="qrcode" style="margin-top: 12px;"></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
   <script>
     function generateQR() {
         var text = document.getElementById('input').value;
@@ -65,6 +67,45 @@ title: Christopher Junius
         }
         container.innerHTML = '';
         container._qr = null;
+    }
+
+    function convertJSONYAML() {
+        var input = document.getElementById('input').value.trim();
+        var message = document.getElementById('message');
+        
+        if (!input) {
+            message.innerText = 'Input is empty';
+            message.style.color = 'red';
+            return;
+        }
+
+        try {
+            // Try to parse as JSON first
+            try {
+                var jsonObj = JSON.parse(input);
+                // If successful, convert JSON to YAML
+                var yaml = jsyaml.dump(jsonObj, { indent: 2 });
+                document.getElementById('input').value = yaml;
+                message.innerText = 'Converted JSON to YAML';
+                message.style.color = 'green';
+            } catch (jsonError) {
+                // If JSON parsing fails, try to parse as YAML
+                try {
+                    var yamlObj = jsyaml.load(input);
+                    // If successful, convert YAML to JSON
+                    var json = JSON.stringify(yamlObj, null, 2);
+                    document.getElementById('input').value = json;
+                    message.innerText = 'Converted YAML to JSON';
+                    message.style.color = 'green';
+                } catch (yamlError) {
+                    message.innerText = 'Invalid JSON or YAML format';
+                    message.style.color = 'red';
+                }
+            }
+        } catch (error) {
+            message.innerText = 'Conversion error: ' + error.message;
+            message.style.color = 'red';
+        }
     }
   </script>
 
