@@ -15,6 +15,8 @@ title: Christopher Junius
         <button type="submit" value="Clear" onClick="document.getElementById('input').value = ''; document.getElementById('message').innerText = ''">Clear</button>
         <button type="submit" value="CharCount" onClick="document.getElementById('message').innerHTML = 'Characters: ' + document.getElementById('input').value.length + '<br />Words: ' + document.getElementById('input').value.trim().split(/\s+/).length">Count</button>
         <button type="submit" value="CSV to Lines" onClick="convertCommaToNewline()">CSV to Lines</button>
+        <button type="submit" value="Sort Ascending" onClick="sortList('ascending')">Sort Ascending</button>
+        <button type="submit" value="Sort Descending" onClick="sortList('descending')">Sort Descending</button>
         
     </div>  
 
@@ -138,6 +140,51 @@ title: Christopher Junius
             message.style.color = 'green';
         } catch (error) {
             message.innerText = 'Conversion error: ' + error.message;
+            message.style.color = 'red';
+        }
+    }
+
+    function sortList(order) {
+        var input = document.getElementById('input').value;
+        var message = document.getElementById('message');
+        
+        if (!input.trim()) {
+            message.innerText = 'Input is empty';
+            message.style.color = 'red';
+            return;
+        }
+
+        try {
+            // Split by newlines and filter out empty lines
+            var lines = input.split('\n').filter(function(line) {
+                return line.trim().length > 0;
+            });
+            
+            if (lines.length === 0) {
+                message.innerText = 'No lines to sort';
+                message.style.color = 'red';
+                return;
+            }
+            
+            // Sort lines
+            if (order === 'ascending') {
+                lines.sort(function(a, b) {
+                    return a.localeCompare(b, undefined, { sensitivity: 'base', numeric: true });
+                });
+            } else {
+                lines.sort(function(a, b) {
+                    return b.localeCompare(a, undefined, { sensitivity: 'base', numeric: true });
+                });
+            }
+            
+            // Join back with newlines
+            var result = lines.join('\n');
+            document.getElementById('input').value = result;
+            
+            message.innerText = 'Sorted ' + lines.length + ' lines in ' + order + ' order';
+            message.style.color = 'green';
+        } catch (error) {
+            message.innerText = 'Sort error: ' + error.message;
             message.style.color = 'red';
         }
     }
