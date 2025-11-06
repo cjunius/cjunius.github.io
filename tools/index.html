@@ -14,6 +14,7 @@ title: Christopher Junius
         <button type="submit" value="Paste" onClick="navigator.clipboard.readText().then((clipText) => (document.getElementById('input').value = clipText));">Paste</button>
         <button type="submit" value="Clear" onClick="document.getElementById('input').value = ''; document.getElementById('message').innerText = ''">Clear</button>
         <button type="submit" value="CharCount" onClick="document.getElementById('message').innerHTML = 'Characters: ' + document.getElementById('input').value.length + '<br />Words: ' + document.getElementById('input').value.trim().split(/\s+/).length">Count</button>
+        <button type="submit" value="CSV to Lines" onClick="convertCommaToNewline()">CSV to Lines</button>
         
     </div>  
 
@@ -102,6 +103,39 @@ title: Christopher Junius
                     message.style.color = 'red';
                 }
             }
+        } catch (error) {
+            message.innerText = 'Conversion error: ' + error.message;
+            message.style.color = 'red';
+        }
+    }
+
+    function convertCommaToNewline() {
+        var input = document.getElementById('input').value;
+        var message = document.getElementById('message');
+        
+        if (!input.trim()) {
+            message.innerText = 'Input is empty';
+            message.style.color = 'red';
+            return;
+        }
+
+        try {
+            // Split by comma and trim whitespace from each value
+            var values = input.split(',').map(function(item) {
+                return item.trim();
+            });
+            
+            // Filter out empty values (optional, but cleaner)
+            values = values.filter(function(item) {
+                return item.length > 0;
+            });
+            
+            // Join with newlines
+            var result = values.join('\n');
+            document.getElementById('input').value = result;
+            
+            message.innerText = 'Converted ' + values.length + ' comma-separated values to newlines';
+            message.style.color = 'green';
         } catch (error) {
             message.innerText = 'Conversion error: ' + error.message;
             message.style.color = 'red';
